@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -12,19 +13,27 @@ html, body {
 img {
     margin: 0;
     padding: 0;
-
     width: 100%;
     height: auto;
 }
-h1, h2, h3, p, ul, li, div {
+h1, h2, h3, p, ul, li, div, img {
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, p {
+    padding: 5px 0px;
+}
 /* End of General rules */
 h1 {
-    font-size: 3.8em;
+    font-size: 2em;
     font-family: Times New Roman; Times, serif;
     text-transform: uppercase;
+}
+.clear {
+    clear: both;
+}
+#content {
+    padding: 10px;
 }
 #showcase {
     min-height: 500px;
@@ -41,17 +50,68 @@ h1 {
     opacity: 0.9;
 }
 #showcase h1 {
-    padding-top: 3.3em;
+    padding-top: 6em;
     padding-bottom: 0
-}
-#showcase p {
-    font-size: 1.2em;
-    padding-top: 0.2em;
-    padding-bottom: 0;
-    color: fuchsia;
 }
 #showcase h1, 
 #showcase p {
     text-align: center;
     color: #fff;
+}
+main {
+    height: 100%;
+    background-color: #dcdcdc;
+    padding: 0px; 
+    margin: 0px;
+}
+.box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #808080;
+    background-color: #fff;
+}
+.featured {
+    height: 500px;
+    background-image: url("https://images.pexels.com/photos/654/clouds-cloudy-agriculture-farm.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.main {
+    padding: 10px; 
+}
+.main p {
+    line-height: 1.6em;
+}
+#section-c {
+    background-color: #fff;
+}
+.small-img {
+    height: 500px;
+    background-image: url("https://images.pexels.com/photos/758742/pexels-photo-758742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.footer {
+    padding: 5px;
+    width: 50%;
+    float: right;
+    text-align: center;
+    border-top: 1px solid #808080;
+}
+/* Media Queries */
+@media(min-width: 700px) {
+    .float {
+        float: right;
+        width: 33.3%;
+    }
+    .featured img {
+        height: 600px;
+        width: auto;
+    }
+    #showcase h1 {
+        font-size: 3.5em;
+        padding-top: 3.5em;
+}
 }
