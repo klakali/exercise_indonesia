@@ -26,7 +26,7 @@ h1, h2, h3, p {
 /* End of General rules */
 h1 {
     font-size: 2em;
-    font-family: Times New Roman; Times, serif;
+    font-family: "Times New Roman"; "Times", serif;
     text-transform: uppercase;
 }
 .clear {
